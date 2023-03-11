@@ -11,7 +11,13 @@ function soloNumeros(array) {
   // soloNumeros([1, 'Henry', 2]) debe retornar [1, 2]
   // Probando primer commit
   // Tu código aca:
-
+  nuevoArray = []
+    
+    for (i = 0; i < array.length; i ++){
+      if (Number.isInteger(array[i]) == true){
+      nuevoArray.push(array[i])}    
+    }
+  return (nuevoArray)
 }
 
 // No modifiques nada debajo de esta linea //

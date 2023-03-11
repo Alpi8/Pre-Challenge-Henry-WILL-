@@ -13,8 +13,14 @@ function numeroSimetrico(num) {
   // numeroSimetrico(11711) devuelve true
 
   // Tu código:
+  var aString = num.toString(); //convierto el numero a string
+  var nuevoArray = aString.split("").reverse().join("") //el metodo .split solo funciona en cadena de strings
+        if (nuevoArray == aString){
+            return (true);//funciona porque se pide que sea igual pero no del mismo tipo (==)
+        }   else return (false);
+  }
 
-}
+
 
 // No modifiques nada debajo de esta linea //
 
